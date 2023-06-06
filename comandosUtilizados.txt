@@ -1,0 +1,163 @@
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica
+
+$ git init
+Initialized empty Git repository in C:/Users/amest/Desktop/Digital House/20230605-PatricioAmestica/.git/
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (master)
+$ git config user.name "noidslack"
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (master)
+$ git config user.email "amesticapatricio@gmail.com"
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (master)
+$ git remote add origin https://github.com/noidslack/20230605-PatricioAmestica.git
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (master)
+$ git branch -M main
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$ touch comandos.txt main.js index.html
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$ git add .
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$ git commit -m "commit 01 de PatricioAmestica"
+[main (root-commit) 77fda69] commit 01 de PatricioAmestica
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 249 bytes | 249.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/noidslack/20230605-PatricioAmestica.git
+ * [new branch]      main -> main
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$  git checkout -b feature01
+Switched to a new branch 'feature01'
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ mkdir Terminal Hardware
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ cd Terminal
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica/Terminal (feature01)
+$ touch resumen.txt
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica/Terminal (feature01)
+$ cd ..
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ cd Hardware
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica/Hardware (feature01)
+$ touch resumen.txt
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica/Hardware (feature01)
+$ cd ..
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git status
+On branch feature01
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        Terminal/
+
+nothing added to commit but untracked files present (use "git add" to track)        
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git add .
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git status
+On branch feature01
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hardware/resumen.txt
+        new file:   Terminal/resumen.txt
+
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git commit -m "commit 02 de PatricioAmestica"
+[feature01 7a7d98b] commit 02 de PatricioAmestica
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Terminal/resumen.txt
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git push origin feature01
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/noidslack/20230605-PatricioAmestica/pull/new/feature01
+remote:
+To https://github.com/noidslack/20230605-PatricioAmestica.git
+ * [new branch]      feature01 -> feature01
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature01)
+$ git checkout -b feature02 feature01
+Switched to a new branch 'feature02'
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature02)
+$ git status
+On branch feature02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature02)
+$ git add .
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature02)
+$ git commit -m "commit 03 de Patricio}Amestica"
+[feature02 24980ed] commit 03 de Patricio}Amestica
+ 2 files changed, 8 insertions(+)
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature02)
+$ git push origin feature02
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 514 bytes | 514.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature02' on GitHub by visiting:
+remote:      https://github.com/noidslack/20230605-PatricioAmestica/pull/new/feature02
+remote:
+To https://github.com/noidslack/20230605-PatricioAmestica.git
+ * [new branch]      feature02 -> feature02
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (feature02)
+$ git checkout main
+Switched to branch 'main'
+
+amest@DESKTOP-JADHAUD MINGW64 ~/Desktop/Digital House/20230605-PatricioAmestica (main)
+$
